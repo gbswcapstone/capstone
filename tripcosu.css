@@ -15,10 +15,6 @@
     font-family: 'Happiness-Sans-Title';
     padding: 0;
 }
-body{
- 
-   
-}
 a{
     text-decoration: none;
     color: black;
@@ -33,7 +29,6 @@ header{
     height: 100px;
     padding: 0px 50px;
     box-sizing: border-box;
-
     position: fixed;
     top: 0%;
     left: 0%;
