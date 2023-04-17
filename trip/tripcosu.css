@@ -117,6 +117,7 @@ nav{
     font-size: 22px;
 }
 .list-group-item {
+    width: 300px;
     background: #fff;
     margin: 20px;
     padding: 20px;
@@ -124,7 +125,15 @@ nav{
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .list-group-item:hover{
     border: 1px solid dodgerblue;
+}
+.img{
+    width: 40%;
+    height: 70px;
+    margin-left: 30px;
 }
