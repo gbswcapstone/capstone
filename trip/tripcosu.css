@@ -16,8 +16,7 @@
     padding: 0;
 }
 body{
- 
-   
+    background-color: #D8E6E7;
 }
 a{
     text-decoration: none;
@@ -33,7 +32,6 @@ header{
     height: 100px;
     padding: 0px 50px;
     box-sizing: border-box;
-
     position: fixed;
     top: 0%;
     left: 0%;
@@ -107,19 +105,35 @@ nav{
     margin-top: 100px;
     margin-left: 300px;
     flex-basis: 20%;
-    background: #ddd;
+    background: #eee;
     min-height: 60vh;
     padding: 5px;
     border-radius: 10px;
+
 }
+
 .column h1 {
     text-align: center;
     font-size: 22px;
 }
 .list-group-item {
+    width: 300px;
     background: #fff;
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-group-item:hover{
+    border: 1px solid dodgerblue;
+}
+.img{
+    width: 40%;
+    height: 70px;
+    margin-left: 30px;
 }

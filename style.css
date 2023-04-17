@@ -18,10 +18,6 @@
 p{
     font-family: 'KyoboHandwriting2021sjy';
 }
-body{
- 
-   
-}
 a{
     text-decoration: none;
     color: black;
@@ -46,7 +42,6 @@ header{
 header a{
     position: relative;
     color: white;
- 
 }
 header a::before{
     content: '';
@@ -67,7 +62,6 @@ header > h1{
     color: white;
     font-size: 50px;
     position: relative;
-   
 }
 header > h1::before{
     content: '';
