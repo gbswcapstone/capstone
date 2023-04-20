@@ -15,6 +15,14 @@
     font-family: 'Happiness-Sans-Title';
     padding: 0;
 }
+#bar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+}
 p{
     font-family: 'KyoboHandwriting2021sjy';
 }
@@ -103,7 +111,7 @@ main .one{
     height: 100vh;
     color: white;
     background-size: cover;
-    background-image: url('./17386991955ce4d674d69fc.jpg');
+    background-image: url('./img/17386991955ce4d674d69fc.jpg');
 }
 main .one h1{
     margin: 0 auto;
@@ -150,11 +158,54 @@ main .twos{
     height: 100vh;
     background-color: beige;
     padding: 80px;
+
+}
+main .twos .inner{
+
+    display: flex;
+    justify-content: space-around;
+
 }
 main .twos h1{
     font-size: 70px;
     margin-bottom: 30px;
 }
-main .tows img{
-    width: 400px;
+main .twos .content{
+    margin-top: -100px;
+    width: 750px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+main .twos .content div{
+    background-color: white;
+    margin-top: 30px;
+    width: 300px;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px gray;
+}   
+main .twos .content div > h3{
+    font-size: 60px;
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'KyoboHandwriting2021sjy';
+}
+main .twos img{
+  
+    width: 300px;
+    height: 150px;
+}
+main .twos #one{
+    width: 500px;
+    height: 500px;
+  
 }
