@@ -1,6 +1,16 @@
 window.addEventListener('scroll', function(e) {
     console.log(this.window.scrollY);
-    if(this.window.scrollY == 721){
+    if(this.window.scrollY > 700){
+      document.querySelector('header').style.color = "#222";
+      document.querySelectorAll('header a').forEach((e)=>{
+        e.style.color = "#222";
+      });
+    }
+    else{
+      document.querySelector('header').style.color = "white";
+      document.querySelectorAll('header a').forEach((e)=>{
+        e.style.color = "white";
+      });
       
     }
     const bar = this.document.getElementById('bar');
