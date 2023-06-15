@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>의스타그램 | 메인페이지</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <style>
+   
+    </style>
 </head>
 <body>
     <div id="bar"></div>
@@ -79,16 +86,61 @@
             </div>
             <div class="there">
                 <div class="gle">
-                    <h1>축제홍보</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div id="text">
+                        <h1>의성군 축제</h1>
+                        <p>의성을 대표하는 여러 축제들을 알아보실 수 있습니다. <br>
+                            의성슈퍼푸드마늘축제는 의성마늘의 <br>우수성과 의성을 알리는 지역특산품 축제이다.  <br>마늘축제에 많은 관심과 참여를 부탁드린다.
+                        </p>
+                    </div>
                 </div>
+
+              
+
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/남대천.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/세계연축제.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/소소한청소년.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/의성슈퍼푸드.jpg"></div>
+                        <div class="swiper-slide"><img src="./img/의성세계하늘축제.jpg"></div>
+                    </div>
+                
+                    <!-- 네비게이션 버튼 -->
+                    <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+                
+                    <!-- 페이징 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                    <script>
+                      new Swiper('.swiper1', {
+                        pagination : { // 페이징 설정
+                          el : '.swiper-pagination',
+                          clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+                        },
+                        navigation : { // 네비게이션 설정
+                          nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+                          prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+                        },
+                      });
+                      
+                      // swiper2
+                      new Swiper('.swiper2', {
+                        loop : true, // 무한 루프 슬라이드, 반복이 되며 슬라이드가 끝이 없다.
+                        pagination : {
+                          el : '.swiper-pagination',
+                        },
+                      });
+                    </script>
             </div>
         </main>
-
-
-
         <footer></footer>
         
     </div>
+
     <script src="./index.js"></script>
 </body>
 </html>

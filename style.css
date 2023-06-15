@@ -38,7 +38,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding: 0px 50px;
     box-sizing: border-box;
     z-index: 100;
@@ -48,7 +48,7 @@ header{
     color: white;
     transition: 0.35s;
     backdrop-filter: blur(5px);
-    background-color: rgba(255,255, 255, 0.5);
+
 }
 
 
@@ -56,6 +56,7 @@ header a{
     position: relative;
     color: white;
     transition: 0.35s;
+    font-size: 17px;
 }
 header a::before{
     content: '';
@@ -73,7 +74,7 @@ header a:hover::before{
     transform: scale(4);
 }
 header > h1{
-    font-size: 50px;
+    font-size: 38px;
     position: relative;
 }
 header > h1::before{
@@ -261,16 +262,119 @@ main .twos #one{
     margin-top: 40px;
     width: 500px;
     height: 500px;
-  
 }
 
 
 /* 이제는 축제홍보 css 입니다  */
 
 .there{
+    padding: 40px;
+    padding-top: 100px;
     width: 100%;
     height: 100vh;
-    background-color: white;
-    color: gold;
-    background-color: #eee;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    position: relative;
+}
+.gle span{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 2px solid skyblue;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    transition: 0.5s;
+  }
+  @keyframes circle {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .gle span:nth-child(1){
+    animation: circle 6s linear infinite ;
+  }
+  .gle span:nth-child(2){
+    animation: circle 4s linear infinite ;
+    animation-direction: reverse;
+  }
+  .gle span:nth-child(3){
+    animation: circle 10s linear infinite ;
+  }
+  .gle:hover span:nth-child(1){
+    opacity: 0.3;
+  }
+  .gle:hover span:nth-child(2){
+    opacity: 0.6;
+  }
+  .gle:hover span:nth-child(3){
+    opacity: 0.8;
+  }
+  .gle:hover span{
+    border: 0;
+    background-color: #DE8972;
+  }
+.there .gle{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+.there .gle h1{
+    color: steelblue;
+    margin-bottom: 20px;
+    font-size: 65px;
+    transition: 0.5s;
+}
+.there .gle p{
+    color: navy;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.there #text{
+    text-align: center;
+    width: 100%;
+    color: dodgerblue;
+    position:absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.there .gle:hover #text h1, .there .gle:hover #text p{
+    color: white;
+}
+.swiper-container {
+    width:640px;
+    height: 500px;   
+    border-radius:7px;
+    
+
+}
+.swiper-slide {
+    text-align:center;
+    display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+    box-shadow:0 0 5px #555;
+}
+
+.swiper-wrapper img{
+    border: 1px solid white;
+    width: 300px;
+    border-radius: 5px;
+}
+.swiper-button-next, .swiper-button-prev{
+    transform: scale(1.5);
 }
