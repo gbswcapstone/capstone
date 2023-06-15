@@ -28,25 +28,82 @@
          </nav>
       </header>
       <main>
-      </main>
-      <footer></footer>
-   </div>
-      <div class="container">
-         <div class="column">
-            <h1>코스목록</h1>
-            <div class="list-group-item" draggable="true">천년 고찰 의성 고운사 <img src="gounsa.png" alt="고운사 사진" class="img"></div>
-            <div class="list-group-item" draggable="true">의성 조문국 박물관 <img src="jomun.png" alt="조문국 봑물관" class="img"></div>
-            <div class="list-group-item" draggable="true">조문국 사적지 <img src="sajuck.png" alt="조문국 사적지" class="img"></div>
-            <div class="list-group-item" draggable="true">산운마을 <img src="sanun.png" alt="산운마을" class="img"></div>
-            <div class="list-group-item" draggable="true">빙계계곡 <img src="bing.png" alt="빙계계곡" class="img"></div>
-            <div class="list-group-item" draggable="true">의성 공룡 발자국산지<img src="gong.png" alt="공룡발자국" class="img"></div>
-            <div class="list-group-item" draggable="true">의성 사촌 가로숲<img src="sachoun.jpg" alt="사촌가로숲의 반대말은 사촌세로숲 엌 ㅋㅋㅋ" class="img"></div>
+     
+      <div id="map"></div>
+      <div class="menu">
+         <div class="bing">
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
+
+            <div id="bing_div">
+               <img src="bing.png" alt="빙계계곡">
+               <div>
+                  <p class="bing-text"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn">추가하기</a>
+               </div>
+            </div>
          </div>
-         <div class="column">
-            <h1>나의 코스</h1>
-         </div>
+         
+      </div>
+   </main>
+</div>
+      <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d3fd06330954f50c5f266e4aabbc7590"></script>
+      <script>
+         var container = document.getElementById('map');
+         var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+         };
+   
+         var map = new kakao.maps.Map(container, options);
+      </script>
+   </body>
 
 </div>
-<script src="/trip/drog.js"></script>
 </body>
 </html>
