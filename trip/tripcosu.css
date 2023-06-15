@@ -99,11 +99,11 @@ nav{
 .container {
     font-family: "Trebuchet MS", sans-serif;
     display: flex;
+    justify-content: space-between;
     gap: 30px;
     }
 .column {
     margin-top: 100px;
-    margin-left: 300px;
     flex-basis: 20%;
     background: #eee;
     min-height: 60vh;
