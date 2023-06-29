@@ -165,3 +165,6 @@ img{
     margin-bottom: 10px;
     justify-content: space-around;
 }
+.adress:hover{
+    cursor:pointer;
+}
