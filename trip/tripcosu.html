@@ -28,63 +28,62 @@
          </nav>
       </header>
       <main>
-     
       <div id="map"></div>
       <div class="menu">
          <div class="bing">
             <div id="bing_div">
                <img src="bing.png" alt="빙계계곡">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text" name="bing"><b>빙계 계곡</b></p>
+                  <a href="#" class="bing-btn" onclick="bing()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="gounsa.png" alt="고운사">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text" name="gosun"><b>고운사</b></p>
+                  <a href="#" class="bing-btn" onclick="gosun()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="gong.png" alt="공룡발자국 화석">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text" name="gong"><b>공룡발자국 화석</b></p>
+                  <a href="#" class="bing-btn" onclick="gong()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="jomun.png" alt="조문국 박물관">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text" name="jomun"><b>조문국 박물관</b></p>
+                  <a href="#" class="bing-btn" onclick="jomun()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="sachoun.jpg" alt="사촌 가로숲에 반댓말은 사촌 세로 숲 엌 ㅋㅋㅋ">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text"><b>사촌 가로숲</b></p>
+                  <a href="#" class="bing-btn" onclick="sa()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="sajuck.png" alt="조문국 사적지">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text" name="sajuck"><b>조문국 사적지</b></p>
+                  <a href="#" class="bing-btn" onclick="sajuck()">추가하기</a>
                </div>
             </div>
 
             <div id="bing_div">
-               <img src="bing.png" alt="빙계계곡">
+               <img src="sanun.png" alt="의성 사촌 마을">
                <div>
-                  <p class="bing-text"><b>빙계 계곡</b></p>
-                  <a href="#" class="bing-btn">추가하기</a>
+                  <p class="bing-text"><b>의성 사촌 마을</b></p>
+                  <a href="#" class="bing-btn" onclick="sachoun()">추가하기</a>
                </div>
             </div>
          </div>
@@ -96,11 +95,68 @@
       <script>
          var container = document.getElementById('map');
          var options = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            center: new kakao.maps.LatLng(36.30212189181263, 128.58692763791905),
             level: 3
          };
    
          var map = new kakao.maps.Map(container, options);
+
+         function bing() {
+            var moveLatLon = new kakao.maps.LatLng(36.22940065745899, 128.75949062864808);
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function gosun() {
+            var moveLatLon = new kakao.maps.LatLng(36.45832274903205, 128.75059241196288);
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function gong() {
+            var moveLatLon = new kakao.maps.LatLng(36.28508405483508, 128.69670593142556 );
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function jomun() {
+            var moveLatLon = new kakao.maps.LatLng(36.27638287365097, 128.66830693902284);
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function sa() {
+            var moveLatLon = new kakao.maps.LatLng(36.42503078323381, 128.7590679658007);
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function sajuck() {
+            var moveLatLon = new kakao.maps.LatLng(36.274001481271014, 128.67525585390078);
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
+         function sachoun() {
+            var moveLatLon = new kakao.maps.LatLng(36.424602667765186, 128.7633508455122 );
+            map.panTo(moveLatLon);
+            var marker = new kakao.maps.Marker({ 
+               position: map.getCenter() 
+            }); 
+            marker.setMap(map);
+         }
       </script>
    </body>
 
