@@ -114,7 +114,7 @@ img{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 142px);
     overflow-y: auto;
 }
 
@@ -167,4 +167,14 @@ img{
 }
 .adress:hover{
     cursor:pointer;
+}
+.co:hover {
+    cursor:pointer;
+}
+.empty{
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    margin-bottom: 30px;
 }
