@@ -129,6 +129,7 @@ function jang() {
     bing6.style.display = ""
     bing7.style.display = ""
     empty.style.display = "none"
+    btn.style.display = "none"
     if(go > 0) {
         bing2.style.display = "none"
     }
@@ -184,6 +185,7 @@ function co() {
     bing7.style.display = "none"
     if(i==0) {
         empty.innerHTML ="아직 추가된 코스가 없습니다"
+        btn.style.display = "none"
         empty.style.display = ""
     }else {
         btn.style.display = ""
@@ -199,13 +201,13 @@ function co() {
                     bing2.style.display = ""
                     parent2.insertBefore(bing2,parent2.childNodes[j+1])
                     go++
-                    bing2.innerHTML = '<img src="gounsa.png" alt="고운사" disabled><div><p class="bing-text" name="gosun"><b>빙계 계곡</b></p><a href="#" class="bing-btn" onclick="delete_go() disabled">삭제하기</a></div>'
+                    bing2.innerHTML = '<img src="gounsa.png" alt="고운사" disabled><div><p class="bing-text" name="gosun"><b>고순사</b></p><a href="#" class="bing-btn" onclick="delete_go()" disabled>삭제하기</a></div>'
                     break;
                 case "gong":
                     bing3.style.display = ""
                     parent3.insertBefore(bing3,parent3.childNodes[j+1])
                     gong_g++
-                    bing3.innerHTML = '<img src="gong.png" alt="공룡발자국 화석" disabled><div><p class="bing-text" name="gong"><b>공룡발자국 화석</b></p><a href="#" class="bing-btn" onclick="delete_gong() disabled">삭제하기</a></div>'
+                    bing3.innerHTML = '<img src="gong.png" alt="공룡발자국 화석" disabled><div><p class="bing-text" name="gong"><b>공룡발자국 화석</b></p><a href="#" class="bing-btn" onclick="delete_gong()" disabled>삭제하기</a></div>'
                     break;
                 case "jomun":
                     bing4.style.display = ""
