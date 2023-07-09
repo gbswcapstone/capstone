@@ -27,6 +27,7 @@ let sa_s = 0
 let sajuck_s = 0
 let sachoun_s = 0
 
+//리스트 삭제
 function delete_bing() {
     bing_b = 0
     bing1.style.display = "none"
@@ -118,8 +119,9 @@ function delete_sachoun() {
     }
     bing7.innerHTML = '<img src="sanun.png" alt="의성 사촌 마을" disabled><div><p class="bing-text" name="sa" disabled><b>의성 사촌 마을</b></p><a href="#" class="bing-btn" onclick="sachoun() ; chnone7()" disabled>추가하기</a></div>'
 }
+//리스트 삭제
 
-
+//스타일 처리
 function jang() {
     bing1.style.display = ""
     bing2.style.display = ""
@@ -173,9 +175,9 @@ function chnone6() {
 }
 function chnone7() {
     bing7.style.display = "none"
-}
+}//스타일 처리
 
-function co() {
+function co() {//코스정보 불러오기
     bing2.style.display = "none"
     bing3.style.display = "none"
     bing1.style.display = "none"
@@ -236,7 +238,9 @@ function co() {
             }
         }
     }
-}
+}//코스정보 불러오기
+
+//핑이동 및 리스트 추가
 
 var container = document.getElementById('map');
 var options = {
@@ -316,7 +320,7 @@ function sachoun() {
     i++
     marker.setMap(map);
 }
-
+//핑이동 및 리스트 추가
 function submit() {
     form.submit()
 }//* 전송함수  */
