@@ -59,7 +59,7 @@ function delete_gong() {
     bing3.style.display = "none"
     for(let j = 0;j< list.length;j++) {
         if(list[j] === 'gong') {
-            list.splice(j,1)
+            list.splice(j,1) 
             parent3.insertBefore(bing3,parent3.childNodes[j+1])
             i--
             break
