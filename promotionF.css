@@ -56,13 +56,14 @@ main .one {
   background-image: url("./17386991955ce4d674d69fc.jpg");
 }
 
-header a {
+header a{
   position: relative;
   color: rgb(255, 255, 255);
+  transition: 0.35s;
+  font-size: 17px;
 }
-
-header a::before {
-  content: "";
+header a::before{
+  content: '';
   position: absolute;
   width: 2px;
   height: 2px;
@@ -72,23 +73,19 @@ header a::before {
   right: 0%;
   transition: 0.35s;
 }
-
-header a:hover::before {
+header a:hover::before{
   background-color: navy;
   transform: scale(4);
 }
-
-header > h1 {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
+header > h1{
+  font-size: 33px;
   position: relative;
 }
-
-header > h1::before {
-  content: "";
+header > h1::before{
+  content: '';
   position: absolute;
-  width: 20px;
-  height: 30px;
+  width: 15px;
+  height: 20px;
   border-radius: 10px;
   background-color: navy;
   box-shadow: -5px 10px 0px 0px gold;
